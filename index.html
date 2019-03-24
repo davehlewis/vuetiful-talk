@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Vue-tiful Framework</title>
+  <meta name="description" content="">
+  <meta name="author" content="David Lewis">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.min.css">
+  <style>
+    .avatar {
+      max-width: 20vw;
+    }
+    
+    .avatar .frames {
+      animation: type 0.2s steps(4, end) infinite;
+    }
+    .avatar .screen-light {
+      animation: flicker 2s linear infinite;
+    }
+    .avatar .eye {
+      animation: blink 5s linear infinite;
+    }
+
+    @keyframes type {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-6rem);
+      }
+    }
+    @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .1;
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.07;
+      }
+    }
+    @keyframes blink {
+      0%, 48%, 51%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>A Vue-tiful framework</h1>
+        <p>
+          <small><a href="http://davehlewis.com">David Lewis</a></small>
+        </p>
+      </section>
+      <section>
+        <h2>David Lewis</h2>
+        <p>Front-end Developer and Product Designer</p>
+        <p><a href="https://twitter.com/davehlewis/">@davehlewis</a></p>
+        <svg class="avatar" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><path d="M12 31h5" stroke="#F0F1F2" stroke-width="2"></path><path d="M12 30.5h4" stroke="#493C2B"></path><path d="M2 21h10v1h1v1h1v2h1v5h-3v-6H2z" fill="#005784"></path><path d="M4 10v1H3v1H2v9h1v1h4v-1h1v-7h3v-2h-1v-1H8v-1H4z" fill="#6917A7"></path><path d="M5 10.5h1m1 0h1m-4 1h1m1 0h1m1 0h1m-6 1h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m1-8h1m-8 1h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-3 2h1m1 0h1m1-8h1m1 0h1" stroke="#CCC"></path><path d="M5 3v7h2V9h1V3z" fill="#ECCCA3"></path><g fill="#190E04"><path d="M5 7v2h3V8H6V7z" opacity=".4"></path><path d="M6 1v1H4v7h1V4h1V3h2V2h1V1z"></path></g><path d="M6 5.5h1" stroke="#000" class="eye"></path><path d="M2 24V11H0v13h1v2h10v-2z" fill="#337380"></path><path d="M6 26v3H5v1H3v1h8v-1H9v-1H8v-3z" fill="#9D9D9D"></path><path d="M2 30h2v2H2zM6 30h2v2H6zM10 30h2v2h-2z"></path><path d="M11.5 19v13M23.5 19v13" stroke="#9D9D9D"></path><path d="M11 18.5h13" stroke="#493C2B"></path><path d="M21 18h3v-1h-1v-6h-1v6h-1z" fill="#9D9D9D"></path><path d="M21.5 7v8M13 17.5h4" stroke="#000"></path><g opacity=".2"><path d="M22 11h1v6h1v15h-1V19h-1v-1h-1v-1h1zM7 1v3H6v5h1v1H5V9H4V2h2V1zM12 22h1v1h1v2h1v5h2v2h-5zM8 26h3v-5h-1v2H6v-1h1v-1H3v-8h1v-1h2v-1h2v-1H4v1H3v1H2v12H1v2h5v3H5v1H2v1h9v-1H9v-1H8z"></path></g><path d="M8 21H7V1h3v1h2v1h2v1h2v1h2v1h2v1h1v8h-1v1h-2v1h-5v1h-2v1H9v1H8v1z" fill="#FFF" opacity=".1" class="screen-light"></path><g class="frames"><path d="M14 16h2m-2-4h2m23 1v4m23-6h2m-2 3h2m23-3v3" stroke="#ECCCA3" stroke-width="2"></path><g fill="#6917A7"><path d="M9 14v1h3v1h2v-4h-3v2zM34 14v1h1v1h3v-3h-1v-1h-2v2zM58 13v-2h4v2h-2v1h2v2h-3v-1h-2v-2zM81 15h5v-4h-5v4z"></path></g><path d="M34 11.5h1m0 1h1m22-1h3m-25 2h1m0 1h1m-3 0h1m0 1h1m24-3h1m-3 1h1m-2 1h1m1 0h1m-2 1h1m1 0h1m20-4h1m1 0h1m-4 1h1m1 0h1m1 0h1m-5 2h1m1 0h1m1 0h1m-4-1h1m1 0h1m-74-1h1m1 0h1m-2 1h1m-4 1h1m1 0h1m1 0h1m-2 1h1" stroke="#CCC"></path><g opacity=".25"><path d="M9 14.5h2" stroke="#000"></path><path d="M12 12v1h1v1h1v-1h2v-2h-2v1zM40 15v2h-2v-1h-3v-1h-1v-2h1v1h1v1zM58 13v1h-1v1h2v1h3v-1h2v-2h-2v1h-2v-1zM88 13v1h-2v1h-5v-1h1v-1z"></path></g><g opacity=".15"><path d="M14 15.5h2m-4-1h2m-3-1h2m21-2h1m0 1h2M63.5 10v2m24-1v2" stroke="#FFF"></path><path d="M37 14h2v1h1v-2h-3z" fill="#FFF"></path></g></g></svg>
+      </section>
+      <section data-background="#FFFFFF">
+        <svg version="1.1" viewBox="0 0 261.76 226.69" style="height: 50vh;" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.3333 0 0 -1.3333 -76.311 313.34)"><g transform="translate(178.06 235.01)"><path d="m0 0-22.669-39.264-22.669 39.264h-75.491l98.16-170.02 98.16 170.02z" fill="#41b883"/></g><g transform="translate(178.06 235.01)"><path d="m0 0-22.669-39.264-22.669 39.264h-36.227l58.896-102.01 58.896 102.01z" fill="#34495e"/></g></g></svg>
+        <h3>Vue JS</h3>
+        <aside class="notes">
+          <ul>
+            <li>Using it 2 years</li>
+            <li>Used as a library initially on existing projects</li>
+            <li>Sat down to look at the frameworks</li>
+            <li>Height of React Open Source controversies</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>What is Vue JS?</h2>
+        <ul>
+          <li>A Front-end JavaScript Framework</li>
+          <li>Created by Evan You</li>
+          <li>Can be used as a library or for building full JavaScript applications</li>
+          <li>Small bundle size, and excellent performance</li>
+          <li>Second most starred project on GitHub</li>
+          <li>Not directly sponsored by any major company</li>
+        </ul>
+        <aside class="notes">
+          <ul>
+            <li>5 years old - youngest, by less than a year</li>
+            <li>Evan You worked for Google as part of Angular team</li>
+            <li>Wanted to take what he liked about Angular and make it faster</li>
+            <li>Virtual DOM</li>
+            <li>Part of Laravel core</li>
+            <li>Supported by Patreon</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Why should I care about Vue?</h2>
+        <ul>
+          <li>Easy learning curve</li>
+          <li>Great documentation</li>
+          <li>Massive growth in the industry</li>
+          <li>Helpful community</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Who uses Vue?</h2>
+        <div style="display: flex; justify-content: space-evenly;">
+          <ul>
+            <li>Facebook</li>
+            <li>Adobe</li>
+            <li>GitLab</li>
+            <li>Grammerly</li>
+          </ul>
+          <ul>
+            <li>Go Compare</li>
+            <li>Talkative</li>
+            <li>Digital Profile</li>
+            <li>W2 Global</li>
+            <li>BlueConf!</li>
+          </ul>
+        </div>
+        <aside class="notes">
+          <ul>
+            <li>Facebook use it as part of their Newsfeed</li>
+            <li>Powers Adobe's Portfolio product (custom website builder) & Behance</li>
+            <li>Gitlab heavy users of framework</li>
+            <li>Go Compare migrating for their front-end</li>
+            <li>Talkative use it with Laravel</li>
+            <li>Migrating to it</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Vue Ecosystem</h2>
+        <h4>Vue Router</h4>
+        <h4>VueX</h4>
+        <h4>Vue Test Utils</h4>
+        <h4>CLI</h4>
+        <h4>UI</h4>
+      </section>
+      <section data-background-video="https://media.giphy.com/media/pGac4wa4HHDMVZhFIa/giphy.mp4" data-background-video-loop>
+        <h2>Let's see some code</h2>
+      </section>
+      <section>
+        <h2>Beyond the Library &ndash; Vue CLI</h2>
+        <ul>
+          <li>Smaller bundle size</li>
+          <li>Single File Components</li>
+          <li>NPM, Webpack, Babel, ESLint</li>
+          <li>Library creation</li>
+          <li>Vue UI</li>
+        </ul>
+        <aside class="notes">
+        </aside>
+      </section>
+      <section data-background-video="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.mp4" data-background-video-loop>
+        <h2>More Code!</h2>
+      </section>
+      <section>
+        <h2>VueX</h2>
+        <aside class="notes">
+          <ul>
+            <li>State management pattern and library for Vue</li>
+            <li>Manage data in large scale applications</li>
+            <li>Maintained by Vue core team</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path fill="#656565" d="M293 50h214v113H293zM293 228.165h214v113H293zM293 403.451h214v113H293z"/><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="156.658" y="95.345" transform="translate(175.492 6.3249)">Gr<tspan x="180.85" y="95.345">a</tspan>ndp<tspan x="234.466px 247.114px 256.426px" y="95.345px 95.345px 95.345px">are</tspan>nt</text><text x="162.214" y="119.345" transform="translate(175.492 6.3249)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="188.818" y="95.345" transform="translate(175.492 184.49)">P<tspan x="202.306px 214.954px 224.266px" y="95.345px 95.345px 95.345px">are</tspan>nt</text><text x="162.214" y="119.345" transform="translate(175.492 184.49)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="196.762" y="95.345" transform="translate(175.492 359.776)">Child</text><text x="162.214" y="119.345" transform="translate(175.492 359.776)">Component</text></g><path d="M378.96 169v53.165l-11.165-9.109" fill="none" stroke="#42affa" stroke-width="2.69"/><path d="M421.04 222.165V169l11.165 9.109M421.04 399.089v-53.165l11.165 9.109" fill="none" stroke="#42af83" stroke-width="2.69"/><path d="M378.96 346.121v53.165l-11.165-9.109" fill="none" stroke="#42affa" stroke-width="2.69"/><text x="301.812" y="200.391" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42affa">PROP</text><text x="447.952" y="201.391" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42af83">EMIT</text><text x="447.952" y="378.598" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42af83">EMIT</text><text x="301.812" y="377.296" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42affa">PROP</text></svg>
+      </section>
+      <section>
+        <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path fill="#656565" d="M0 50h214v113H0zM334.465 50h214v113h-214zM0 228.165h214v113H0zM334.465 228.165h214v113h-214z"/><path fill="#4ba19b" d="M586 228.165h214v113H586z"/><path fill="#656565" d="M0 403.451h214v113H0zM334.465 403.451h214v113h-214z"/><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="156.658" y="95.345" transform="translate(-117.508 6.3249)">Gr<tspan x="180.85" y="95.345">a</tspan>ndp<tspan x="234.466px 247.114px 256.426px" y="95.345px 95.345px 95.345px">are</tspan>nt</text><text x="162.214" y="119.345" transform="translate(-117.508 6.3249)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="156.658" y="95.345" transform="translate(216.957 6.3249)">Gr<tspan x="180.85" y="95.345">a</tspan>ndp<tspan x="234.466px 247.114px 256.426px" y="95.345px 95.345px 95.345px">are</tspan>nt</text><text x="162.214" y="119.345" transform="translate(216.957 6.3249)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="188.818" y="95.345" transform="translate(-117.508 184.49)">P<tspan x="202.306px 214.954px 224.266px" y="95.345px 95.345px 95.345px">are</tspan>nt</text><text x="162.214" y="119.345" transform="translate(-117.508 184.49)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="188.818" y="95.345" transform="translate(216.957 184.49)">P<tspan x="202.306px 214.954px 224.266px" y="95.345px 95.345px 95.345px">are</tspan>nt</text><text x="162.214" y="119.345" transform="translate(216.957 184.49)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="196.306" y="95.345" transform="translate(468.492 184.49)">V<tspan x="209.41" y="95.345">U</tspan>EX</text><text x="189.31" y="119.345" transform="translate(468.492 184.49)">S<tspan x="202.174px 214.846px" y="119.345px 119.345px">TO</tspan>RE</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="196.762" y="95.345" transform="translate(-117.508 359.776)">Child</text><text x="162.214" y="119.345" transform="translate(-117.508 359.776)">Component</text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="196.762" y="95.345" transform="translate(216.957 359.776)">Child</text><text x="162.214" y="119.345" transform="translate(216.957 359.776)">Component</text></g><path d="M85.96 169v53.165l-11.165-9.109" fill="none" stroke="#42affa" stroke-width="2.69"/><path d="M128.04 222.165V169l11.165 9.109M128.04 399.089v-53.165l11.165 9.109" fill="none" stroke="#42af83" stroke-width="2.69"/><path d="M85.96 346.121v53.165l-11.165-9.109" fill="none" stroke="#42affa" stroke-width="2.69"/><text x="8.812" y="200.391" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42affa">PROP</text><text x="154.952" y="201.391" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42af83">EMIT</text><text x="598.747" y="414.8" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42af83">A<tspan x="612.259px 625.939px" y="414.8px 414.8px">CT</tspan>ION</text><text x="595.867" y="166.769" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42affa">GETTER</text><text x="154.952" y="378.598" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42af83">EMIT</text><text x="8.812" y="377.296" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#42affa">PROP</text><path d="M273 107.466v352.485" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="2.69"/><path d="M559 459.951h133V354l19 19" fill="none" stroke="#42af83" stroke-width="5.44"/><path d="M693 213V109H569l29.603-29.603" fill="none" stroke="#42affa" stroke-width="4.98"/></svg>
+      </section>
+      <section>
+        <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path fill="#656565" d="M32 137.917h214v113H32zM293 137.917h214v113H293zM546 137.917h214v113H546z"/><text x="79.442" y="202.685" font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff">Shop It<tspan x="154.346" y="202.685">e</tspan>ms</text><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="173.698" y="95.345" transform="translate(175.492 94.2422)">Shopping</text><text x="188.386" y="119.345" transform="translate(175.492 94.2422)">Bask<tspan x="238.666px 250.858px" y="119.345px 119.345px">et</tspan></text></g><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="174.25" y="95.345" transform="translate(428.492 94.2422)">Check<tspan x="238.042" y="95.345">o</tspan>ut</text><text x="183.634" y="119.345" transform="translate(428.492 94.2422)">Pr<tspan x="207.25px 220.57px 231.106px" y="119.345px 119.345px 119.345px">oce</tspan>ss</text></g><path fill="#4ba19b" d="M293 349.083h214v113H293z"/><g font-family="'SourceSansPro-Bold','Source Sans Pro',sans-serif" font-weight="700" font-size="24" fill="#fff"><text x="196.306" y="95.345" transform="translate(175.492 305.408)">V<tspan x="209.41" y="95.345">U</tspan>EX</text><text x="189.31" y="119.345" transform="translate(175.492 305.408)">S<tspan x="202.174px 214.846px" y="119.345px 119.345px">TO</tspan>RE</text></g><path d="M378.96 271.917v53.166l-11.165-9.11" fill="none" stroke="#42affa" stroke-width="2.69"/><path d="M378.96 271.917v53.166l-11.165-9.11M179.787 271.917l67.216 67.216-14.337 1.454" fill="none" stroke="#42affa" stroke-width="2.69"/><path d="M421.04 325.083v-53.166l11.165 9.11M301.758 334.378l-62.594-62.594 14.337-1.454" fill="none" stroke="#42af83" stroke-width="2.69"/><path d="M504.787 339l67.216-67.216-14.337-1.454" fill="none" stroke="#42affa" stroke-width="2.69"/><path d="M632.967 270.33l-68.803 68.803 14.337 1.454" fill="none" stroke="#42af83" stroke-width="2.69"/></svg>
+      </section>
+      <section>
+        <h2>Vue Dev Tools</h2>
+      </section>
+      <section>
+        <h2>Taking Vue further</h2>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <svg style="display: block; height: 8vh; margin-bottom: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418.08 71.29" class="SVG-nuxtjs" data-v-d9640ef6=""><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M166.41 21.1a3.06 3.06 0 0 1 .85 2.22V66a3.43 3.43 0 0 1-.95 2.46 3.23 3.23 0 0 1-2.43 1 4.82 4.82 0 0 1-1.51-.24 2.59 2.59 0 0 1-1.16-.74l-27.65-36v33.89a3 3 0 0 1-3.09 3.09 2.87 2.87 0 0 1-2.18-.88 3.06 3.06 0 0 1-.84-2.21V23.6a3.25 3.25 0 0 1 1-2.42 3.15 3.15 0 0 1 2.35-.95 4.28 4.28 0 0 1 1.62.31 2.8 2.8 0 0 1 1.19.88l27.53 36.08V23.32a3 3 0 0 1 3.09-3.09 2.9 2.9 0 0 1 2.18.87zM223.21 21.1a3.44 3.44 0 0 1 .88 2.43v27a20.21 20.21 0 0 1-2.46 10 17.88 17.88 0 0 1-6.79 6.93A19.16 19.16 0 0 1 205.1 70a19.51 19.51 0 0 1-9.85-2.49 17.82 17.82 0 0 1-6.82-6.93 20.21 20.21 0 0 1-2.46-10v-27a3.23 3.23 0 0 1 1-2.43 3.51 3.51 0 0 1 2.53-1 3.29 3.29 0 0 1 2.36 1 3.2 3.2 0 0 1 1 2.39v27a12.87 12.87 0 0 0 1.69 6.58 12.14 12.14 0 0 0 10.55 6.15 12.56 12.56 0 0 0 6.26-1.62 12.22 12.22 0 0 0 4.64-4.53 12.7 12.7 0 0 0 1.72-6.58v-27a3.56 3.56 0 0 1 .84-2.43 3 3 0 0 1 2.33-1 3.05 3.05 0 0 1 2.32.99zM277.34 64.4a3.3 3.3 0 0 1 .63 2 3.06 3.06 0 0 1-1 2.39 3.33 3.33 0 0 1-2.29.91 3.15 3.15 0 0 1-2.74-1.4l-13.67-18.25-13.36 18.22a3.23 3.23 0 0 1-2.74 1.47 2.91 2.91 0 0 1-2.15-.88 2.73 2.73 0 0 1-.88-2 3.78 3.78 0 0 1 .85-2.32l14.42-19.63-14.49-19.48a3.27 3.27 0 0 1-.71-2 3.2 3.2 0 0 1 1-2.39 3.29 3.29 0 0 1 2.36-1 3.42 3.42 0 0 1 1.51.36 3.1 3.1 0 0 1 1.23 1.05l13.51 18.15 13.38-17.97a3.4 3.4 0 0 1 2.67-1.55 3 3 0 0 1 2.22 1 3 3 0 0 1 1 2.15 3.54 3.54 0 0 1-.7 2l-14.68 19.54zM328.09 21.1a3.07 3.07 0 0 1 1 2.36 3 3 0 0 1-1 2.32 3.56 3.56 0 0 1-2.43.84h-12.52v39.47a3.21 3.21 0 0 1-1 2.39 3.86 3.86 0 0 1-5.14 0 3.24 3.24 0 0 1-1-2.39V26.62h-12.49a3.44 3.44 0 0 1-2.42-.87 3.07 3.07 0 0 1-.95-2.36 3 3 0 0 1 .95-2.29 3.44 3.44 0 0 1 2.42-.87h32.15a3.48 3.48 0 0 1 2.43.87z" fill="#fff"></path> <path d="M343.49 68.2a14.8 14.8 0 0 1-5.49-5.42 3.56 3.56 0 0 1-.64-1.9 3 3 0 0 1 1.06-2.29 3.25 3.25 0 0 1 2.18-1 4.51 4.51 0 0 1 3.17 1.76 8.49 8.49 0 0 0 7.38 4.08 9 9 0 0 0 6.54-2.6 8.59 8.59 0 0 0 2.68-6.4V23.6a3.16 3.16 0 0 1 1.05-2.39 3.48 3.48 0 0 1 2.46-1 3.34 3.34 0 0 1 2.5.95 3.29 3.29 0 0 1 .95 2.42v30.9a15.23 15.23 0 0 1-2.11 7.88 15.53 15.53 0 0 1-5.8 5.69 16.34 16.34 0 0 1-8.27 2.12 15.25 15.25 0 0 1-7.66-1.97zM391.85 68.72a23.18 23.18 0 0 1-7.53-4.67 3.76 3.76 0 0 1-1.47-2.89 3.19 3.19 0 0 1 1-2.28 3.13 3.13 0 0 1 2.32-1 2.88 2.88 0 0 1 2 .77 19.56 19.56 0 0 0 5.8 3.83 17.56 17.56 0 0 0 6.79 1.24 13.19 13.19 0 0 0 7.49-2.05 6 6 0 0 0 3.06-5.13 6.58 6.58 0 0 0-3.06-5.66 27.19 27.19 0 0 0-9.1-3.34c-4.84-1-8.55-2.61-11.16-4.86s-3.9-5.37-3.9-9.35a12.44 12.44 0 0 1 2.2-7.33 14 14 0 0 1 6-4.82 21.53 21.53 0 0 1 8.72-1.69 23.84 23.84 0 0 1 8.23 1.41 17.31 17.31 0 0 1 6.26 3.73 4 4 0 0 1 1.62 3 3.14 3.14 0 0 1-.95 2.25 3 3 0 0 1-2.29 1 2.31 2.31 0 0 1-1.61-.57 14.51 14.51 0 0 0-5.07-3.09 16.83 16.83 0 0 0-6.14-1.22 12.89 12.89 0 0 0-7.49 1.94 6.22 6.22 0 0 0 0 10.37 26.21 26.21 0 0 0 8.27 3.1 43.61 43.61 0 0 1 9 2.81 12.68 12.68 0 0 1 5.38 4.5 13.53 13.53 0 0 1 1.89 7.53 12.06 12.06 0 0 1-2.28 7.24 15.08 15.08 0 0 1-6.23 4.93 21 21 0 0 1-8.65 1.76 26.07 26.07 0 0 1-9.1-1.46z" fill="#00c48d"></path> <path d="M6 65.67h22.69a7.57 7.57 0 0 1 .82-2.46l21.28-37.42L39.72 6.33zM79.44 65.67H90L62.28 16.94l-5 8.85 21.24 37.42a7.31 7.31 0 0 1 .92 2.46zM54.02 31.47l-19.45 34.2h38.89l-19.44-34.2z" fill="none"></path> <path d="M29.22 68.88a3.54 3.54 0 0 1-.19-.39 5 5 0 0 1-.34-2.82H6L39.72 6.33l11.07 19.46L54 20.11l-9.65-17C44.08 2.62 42.45 0 39.64 0c-1.27 0-3.09.55-4.57 3.15L.91 63.21c-.29.52-1.7 3.25-.3 5.67.64 1.1 2 2.41 5 2.41h28.61c-2.98 0-4.36-1.29-5-2.41z" fill="#00c58e"></path> <path d="M95 63.21L66.93 13.76c-.29-.52-1.91-3.15-4.73-3.15-1.27 0-3.09.54-4.57 3.14L54 20.11l3.23 5.68 5-8.85L90 65.67H79.44a4.73 4.73 0 0 1-.22 2.4 3.06 3.06 0 0 1-.22.49l-.09.18c-1.42 2.42-4.49 2.55-5.09 2.55h16.52c.61 0 3.67-.13 5.09-2.55.63-1.1 1.08-2.95-.43-5.53zM95.04 63.21z" fill="#108775"></path> <path d="M78.91 68.74l.09-.18a3.06 3.06 0 0 0 .22-.49 4.73 4.73 0 0 0 .22-2.4 7.31 7.31 0 0 0-.92-2.46L57.25 25.79 54 20.11l-3.23 5.68-21.26 37.42a7.57 7.57 0 0 0-.82 2.46 5 5 0 0 0 .31 2.82 3.54 3.54 0 0 0 .19.39c.64 1.1 2 2.41 5 2.41h39.6c.63 0 3.7-.13 5.12-2.55zM54 31.47l19.44 34.2H34.57z" fill="#2f495e"></path></g></g></svg>
+          <svg style="display: block; height: 10vh; margin-bottom: 40px;" viewBox="0 0 1234 245" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M221.494 101.381c11.779-.566 22.207 8.572 23.224 20.363 4.406 57.036-46.853 120.823-120.412 122.866-11.789.328-21.61-8.99-21.937-20.811-.326-11.822 8.965-21.67 20.754-21.998 48.8-1.355 79.715-43.506 78.065-78.006-.565-11.812 8.526-21.847 20.306-22.414z" fill="url(#paint0_linear)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M21.6333 100.167c11.7932 0 21.3535 9.587 21.3535 21.413 0 49.359 39.6878 81.303 79.3282 80.325 11.79-.291 21.582 9.057 21.872 20.879.291 11.823-9.032 21.643-20.821 21.933C61.3766 246.247.0678711 196.619.0678711 121.58c-5e-7-11.826 9.7722289-21.413 21.5654289-21.413z" fill="url(#paint1_linear)"/><path d="M168.15 123.24c0-12.107 9.876-21.922 22.058-21.922h32.146c12.183 0 22.364 9.815 22.364 21.922 0 12.108-10.181 21.923-22.364 21.923h-32.146c-12.182 0-22.058-9.815-22.058-21.923z" fill="url(#paint2_linear)"/><path d="M100.7 123.272c0-12.125 9.813-21.954 21.904-21.954 12.092 0 21.905 9.829 21.905 21.954s-9.813 21.955-21.905 21.955c-12.091 0-21.904-9.83-21.904-21.955z" fill="url(#paint3_linear)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M143.902 20.6961c.49 11.8158-8.666 21.7921-20.449 22.2828-50.8655 2.1183-81.9184 42.0968-80.4069 80.0571.4705 11.816-8.5095 21.778-20.2933 22.25-11.7838.472-22.146441-9.065-22.616953-20.881C-2.3273 62.5448 49.1804 1.39121 121.681.190226c11.783-.490703 21.732 8.690084 22.221 20.505874z" fill="url(#paint4_linear)"/><path d="M570.994 48.0619c-6.598 0-11.545 4.9688-11.545 11.594 0 6.6251 4.947 11.5939 11.309 11.5939 6.362 0 11.545-4.9688 11.545-11.3573 0-6.6252-4.948-11.8306-11.309-11.8306z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M409.02 112.256h57.43l.121 1.692c.24 3.377.24 7.683.24 9.106v.014c0 21.409-4.816 36.49-16.647 51.523l-.004.004-.003.005c-15.416 19.351-36.199 29.554-60.567 29.554-45.858 0-79.341-35.21-79.341-83.216 0-48.7001 33.233-83.9247 79.341-83.9247 24.358 0 45.381 10.1946 60.569 29.3195l1.118 1.4084-17.592 14.3012-1.16-1.2996c-6.119-6.8542-8.816-9.5395-12.849-12.2397l-.032-.0215-.031-.0229c-8.392-6.1494-19.084-9.5849-30.023-9.5849-31.33 0-55.432 26.4442-55.432 61.8282 0 34.921 24.111 61.591 54.961 61.591 16.863 0 34.433-8.956 43.738-22.402l.017-.024.017-.023c5.561-7.518 7.912-14.613 9.531-26.911H409.02v-20.677zm77.791-23.6613h21.554v12.3433c1.982-3.3901 4.051-5.6704 6.946-7.9317 5.789-4.5495 13.744-7.0143 21.861-7.0143h6.064v22.104l-2.051-.258c-1.757-.22-3.535-.222-4.72-.222-9.054 0-16.969 4.194-22.049 11.736l-.005.007-.004.006c-4.43 6.451-6.042 12.431-6.042 24.761v57.188h-21.554V88.5947zm94.724 0V201.314h-21.554V88.5947h21.554zm107.574 13.4673c-10.21-11.031-22.071-16.07-37.054-16.07-30.666 0-52.952 25.643-52.952 59.554 0 33.952 21.852 58.371 52.952 58.371 8.496 0 15.819-1.649 22.438-5.283 5.304-2.912 10.079-7.057 14.616-12.512v15.192h21.553V39.8526h-21.553v62.2094zm120.56 19.987H788.03v-3.004c0-4.546-1.819-8.156-4.994-10.67-3.218-2.548-7.965-4.072-13.917-4.072-5.715 0-10.163 1.464-13.141 3.857-2.939 2.361-4.592 5.734-4.592 9.939 0 2.225.279 3.953.896 5.397.606 1.418 1.589 2.678 3.185 3.89 3.305 2.509 9.037 4.683 18.848 7.413 13.98 3.808 21.668 7.459 27.198 13.012 5.76 5.784 9.249 14.054 9.249 22.579 0 10.005-4.129 18.449-11.328 24.358-7.168 5.885-17.268 9.169-29.137 9.169-12.636 0-22.764-2.96-30-8.968-7.263-6.032-11.37-14.932-12.343-26.296l-.169-1.976h21.314l.158 1.647c.554 5.781 2.682 10.026 6.093 12.85 3.435 2.844 8.394 4.432 14.947 4.432 5.826 0 10.457-1.52 13.59-4.011 3.095-2.461 4.85-5.956 4.85-10.258 0-2.169-.351-3.963-1.077-5.514-.723-1.545-1.866-2.952-3.6-4.281-3.54-2.714-9.405-5.009-18.69-7.37l-.014-.003-.014-.004c-11.905-3.228-20.786-7.413-26.701-13.072-5.99-5.73-8.809-12.847-8.809-21.574 0-9.995 4.062-18.438 11.171-24.3506 7.081-5.8894 17.066-9.1764 28.823-9.1764 11.842 0 21.557 3.0349 28.457 8.9252 6.927 5.9128 10.808 14.5238 11.298 25.2278l.088 1.904zm145.67-33.4543h21.554v11.333c3.283-4.1037 6.807-7.26 10.758-9.5239 5.339-3.0591 11.322-4.4118 18.289-4.4118 7.68 0 14.13 1.6551 19.34 5.1957 4.34 2.9511 7.7 7.1308 10.19 12.4943 3.67-5.6049 7.85-9.8285 12.87-12.7416 5.92-3.4277 12.86-4.9484 21.21-4.9484 12.87 0 22.93 4.1588 29.03 12.3183 2.73 3.6157 4.5 7.1057 5.56 11.9447 1.05 4.761 1.4 10.785 1.4 19.438v71.621h-21.55v-67.362c0-6.643-.12-10.593-.54-13.428-.41-2.729-1.08-4.405-2.28-6.48-2.89-4.971-9.25-8.321-17.27-8.321-7.45 0-13.02 2.492-16.76 7.079-3.79 4.645-5.92 11.688-5.92 21.15v67.362h-21.56v-67.125c0-10.58-.95-15.635-3.31-19.949l-.01-.031-.02-.032c-2.67-5.365-8.51-8.454-16.04-8.454-7.42 0-13.181 2.649-17.122 7.387-3.977 4.782-6.265 11.894-6.265 21.079v67.125h-21.554V88.5947zm278.251 63.9773h-90.11c.44 3.551 1.03 6.312 1.89 8.752 1.01 2.86 2.44 5.358 4.6 8.205l.01.013.01.014c6.72 9.229 16.54 14.157 27.74 14.157 12.79 0 24.89-6.997 30.92-17.761l.77-1.365 19.13 7.17-.88 1.801c-9.28 18.876-28.55 30.359-49.94 30.359-33.33 0-57.2-24.522-57.2-58.608 0-34.517 23.59-59.317 56.49-59.317 32.61 0 56.96 24.738 56.96 57.661v.021c0 1.419 0 4.558-.24 7.241l-.15 1.657zM557.625 59.6559c0-7.6209 5.755-13.4147 13.369-13.4147 7.45 0 13.133 6.1044 13.133 13.6513 0 7.4331-6.04 13.178-13.369 13.178-7.403 0-13.133-5.8186-13.133-13.4146zm122.139 56.9001c-5.835-6.864-14.101-10.833-23.939-10.833-10.202 0-18.704 4.037-24.682 10.989-5.996 6.974-9.544 16.997-9.544 29.071 0 11.591 3.484 21.323 9.311 28.127 5.81 6.783 14.022 10.749 23.737 10.749 19.747 0 34.462-16.464 34.462-39.35 0-11.958-3.491-21.866-9.345-28.753zm161.817-14.19c10.154-10.4126 24.543-16.374 41.479-16.374 33.131 0 56.722 24.795 56.722 59.317 0 32.914-25.286 58.608-57.429 58.608-16.604 0-30.816-6.095-40.872-16.593-10.051-10.492-15.85-25.275-15.85-42.488 0-17.33 5.799-32.061 15.95-42.47zm66.598 14.433c-6.021-6.714-14.643-10.603-25.119-10.603-10.724 0-19.526 3.898-25.66 10.616-6.149 6.733-9.744 16.441-9.744 28.261 0 11.697 3.593 21.348 9.714 28.054 6.108 6.691 14.853 10.586 25.454 10.586 20.273 0 34.933-15.815 34.933-38.64 0-11.827-3.541-21.541-9.578-28.274zm235.651 18.882h67.23c-.76-7.013-2.35-11.113-5.6-15.812-6.49-8.748-17.01-14.146-28.44-14.146s-21.68 5.391-27.69 14.318c-2.84 4.486-4.22 8.404-5.5 15.64zM570.994 48.0619c-6.598 0-11.545 4.9688-11.545 11.594 0 6.6251 4.947 11.5939 11.309 11.5939 6.362 0 11.545-4.9688 11.545-11.3573 0-6.6252-4.948-11.8306-11.309-11.8306z" fill="#fff"/><defs><linearGradient id="paint0_linear" x1="131.849" y1="295.871" x2="198.611" y2="304.452" gradientUnits="userSpaceOnUse"><stop stop-color="#1A7D75"/><stop offset="1" stop-color="#1A8864"/></linearGradient><linearGradient id="paint1_linear" x1="8.1347" y1="116.241" x2="-25.4943" y2="204.661" gradientUnits="userSpaceOnUse"><stop offset=".0129262" stop-color="#168A81"/><stop offset="1" stop-color="#31A97F"/></linearGradient><linearGradient id="paint2_linear" x1="57.6617" y1="127.831" x2="114.279" y2="213.676" gradientUnits="userSpaceOnUse"><stop stop-color="#27A59B"/><stop offset="1" stop-color="#64D8A2"/></linearGradient><linearGradient id="paint3_linear" x1="37.4823" y1="127.87" x2="98.5345" y2="180.757" gradientUnits="userSpaceOnUse"><stop stop-color="#27A59B"/><stop offset="1" stop-color="#64D8A2"/></linearGradient><linearGradient id="paint4_linear" x1="304.542" y1="-205.801" x2="124.854" y2="-266.451" gradientUnits="userSpaceOnUse"><stop stop-color="#27A59B"/><stop offset="1" stop-color="#64D8A2"/></linearGradient></defs></svg>
+          <svg style="display: block; height: 15vh;" viewBox="0 0 308 100" xmlns="http://www.w3.org/2000/svg"><path d="M43.75 0H23.31l20.44 48.32" fill="#1697f6"/><path d="M43.75 62.5V100L0 14.58h22.92L43.75 62.5zM43.75 0h20.44L43.75 48.32" fill="#7bc6ff"/><path d="M64.58 14.58H87.5L43.75 100V62.5l20.83-47.92z" fill="#aeddff"/><path d="M294.031 62.125l9.875-28.438 4.031.001L293.5 73.25l-.75 1.75c-1.854 4.104-4.719 6.156-8.594 6.156-.896 0-1.854-.146-2.875-.437l-.031-3.094 1.938.187c1.833 0 3.317-.453 4.453-1.359 1.135-.906 2.099-2.463 2.89-4.672l1.657-4.562-12.75-33.532h4.093l10.5 28.438zm-61-28.438h7v3.063h-7v22.556c0 1.877.339 3.275 1.016 4.193.677.917 1.807 1.376 3.391 1.376.625 0 1.635-.104 3.031-.313l.156 3.037c-.979.351-2.312.526-4 .526-2.562 0-4.427-.745-5.594-2.234-1.166-1.49-1.75-3.683-1.75-6.579V36.75h-6.218v-3.063h6.218v-8.656h3.75v8.656zM184.438 67.5h-3.625l-.063-4.281c-2.25 3.271-5.844 4.906-10.781 4.906-3.604 0-6.344-1.047-8.219-3.141-1.875-2.093-2.833-5.192-2.875-9.297v-22h3.719v21.532c0 6.437 2.604 9.656 7.812 9.656 5.417 0 8.844-2.24 10.282-6.719V33.687h3.75V67.5zm11.375-16.656v.718c0 3.834 1.098 7.027 3.296 9.579 2.198 2.552 4.964 3.828 8.297 3.828 2 0 3.766-.365 5.297-1.094 1.531-.729 2.922-1.896 4.172-3.5l2.344 1.781c-2.75 3.979-6.74 5.969-11.969 5.969-2.875 0-5.474-.708-7.797-2.125-2.323-1.417-4.13-3.391-5.422-5.922-1.291-2.531-1.937-5.37-1.937-8.516v-1.343c0-3.25.63-6.177 1.89-8.782 1.261-2.604 3.016-4.651 5.266-6.14 2.25-1.49 4.688-2.235 7.313-2.235 4.104 0 7.359 1.402 9.765 4.204 2.406 2.802 3.61 6.63 3.61 11.484v2.094h-24.125zM137.125 67.5h-3.687L116.5 22h4.188L135 61.875l.25.969.281-.969L149.844 22h4.219l-16.938 45.5zm114.844 0h-3.75V33.687h3.75V67.5zm16.594 0h-3.75V36.75h-5.594v-3.063h5.594v-4.093c0-3.459.88-6.115 2.64-7.969 1.761-1.854 4.214-2.781 7.36-2.781 1.416 0 2.739.175 3.968.526l-.281 3.099c-1.042-.25-2.177-.375-3.406-.375-2.063 0-3.667.642-4.813 1.927-1.146 1.284-1.718 3.107-1.718 5.468v4.198h8.062v3.063h-8.062V67.5zm-62-31.25c-2.813 0-5.183 1.031-7.11 3.094-1.927 2.062-3.099 4.833-3.515 8.312h20.281v-.406c-.104-3.25-1.031-5.896-2.781-7.938-1.75-2.041-4.042-3.062-6.875-3.062zm41-12.328c0-.704.229-1.3.687-1.786.458-.487 1.083-.73 1.875-.73s1.422.243 1.891.73c.468.486.703 1.082.703 1.786s-.235 1.294-.703 1.77c-.469.476-1.099.714-1.891.714s-1.417-.238-1.875-.714c-.458-.476-.687-1.066-.687-1.77z" fill="#fff"/></svg>
+        </div>
+      </section>
+      <section>
+        <h2>Where next?</h2>
+        <p>Vue Docs! &ndash; <a href="https://vuejs.org/">vuejs.org</a></p>
+        <p>Vue School &ndash; <a href="https://vueschool.io/">vueschool.io</a></p>
+        <p>Made with Vue &ndash; <a href="https://madewithvuejs.com/">madewithvuejs.com</a></p>
+      </section>
+      <section>
+        <h1>Thank you</h1>
+        <svg style="width: 20vw;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M1 16v-1h1v-2h1v-1h1v-1h1v-1h5v1h1v1h1v1h1v2h1v1z" fill="#6917A7"></path><path d="M11 16H4v-1h1v-1h1v-3h3v2h1v1h1z" fill="#666"></path><path d="M2 15.5H1m11 0h-1m3 0h-1m0-1h-1m0-1h-1m0-1h-1m0-1H9m-5 4H3m0-1H2m3 0H4m0-1H3m3 0H5m0-1H4m2-1H5" fill="none" stroke="#CCC" stroke-miterlimit="10"></path><path d="M6 8h3v3H6z" fill="#ECCCA3"></path><path d="M6.5 9v5m-1-4v5m-1-4v5m-1-4v3m4-4v4m1-4v3m2 0v1" fill="none" stroke="#000" stroke-miterlimit="10" opacity=".2"></path><path d="M9.5 10v2m1-1v2m1-1v2m1-1v2m1 0v1" fill="none" stroke="#FFF" stroke-miterlimit="10" opacity=".2"></path><path d="M7 7.5H6" fill="none" stroke="#190E04" stroke-miterlimit="10"></path><g class="frames"><path d="M10 2H7v1H6v2h1v3H6v1h4z" fill="#ECCCA3"></path><path d="M11 0v1h-1v1H7v1H6v2h1v2H6V6H5V1h2V0z" fill="#190E04"></path><path d="M9 4.5h1m-3 0h1" fill="none" stroke="#000" stroke-miterlimit="10"></path><path d="M7 7h1v1h2v1H7z" fill="#190E04" opacity=".4"></path><path d="M7.5 2v1m-1 0v2m1 0v3.5H6" fill="none" stroke="#000" stroke-miterlimit="10" opacity=".2"></path><path d="M10-8v-6H7v1H6v2h1v3z" fill="#ECCCA3"></path><path d="M10-16v2H7v1H6v2h1v2H6v-1H5v-5h2v-1z" fill="#190E04"></path><path d="M9-12.5h1m-3 0h1" fill="none" stroke="#000" stroke-miterlimit="10"></path><path d="M7-9h3v1H7z" fill="#190E04" opacity=".4"></path><path d="M7.5-14v1m-1 0v2m1 1v2m1.5.5H6" fill="none" stroke="#000" stroke-miterlimit="10" opacity=".2"></path><path d="M7 26h3v-6H7v1H6v2h1z" fill="#ECCCA3"></path><path d="M6 23H5v-4h1v-1h5v1h-1v1H7v1H6v2" fill="#190E04"></path><path d="M6.5 24v1" fill="none" stroke="#190E04" stroke-miterlimit="10"></path><path d="M9 22.5h1m-3 0h1" fill="none" stroke="#000" stroke-miterlimit="10"></path><path d="M7 24h1v1h2v1H7z" fill="#190E04" opacity=".4"></path><path d="M7.5 20v1m-1 0v2m1 0v3" fill="none" stroke="#000" stroke-miterlimit="10" opacity=".2"></path></g></svg>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      progress: true,
+      history: true,
+      center: true,
+      transition: 'slide',
+      dependencies: [
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/notes/notes.js', async: true }
+			]
+    });
+  </script>
+</body>
+</html>
